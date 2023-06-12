@@ -1,0 +1,14 @@
+.header {
+  background-image: url('{% static 'images/background_netflix.jpg' %}');
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    background-size: 100% auto;
+  }
+}
+.h-screen-2 {
+  height: 106vh; /* Adjust the height value as needed */
+}
