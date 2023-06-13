@@ -23,14 +23,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 TOKEN_CSRF = os.environ.get('TOKEN_CSRF')
 if TOKEN_CSRF:
     TOKEN_CSRF = TOKEN_CSRF
-    CSRF_TRUSTED_ORIGINS = ['https://projetodjango-production.up.railway.app/']
+    CSRF_TRUSTED_ORIGINS = ['https://projetodjango-production.up.railway.app']
 else:
     SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://projetodjango-production.up.railway.app/', 'localhost', 'http://127.0.0.1']
+ALLOWED_HOSTS = ['projetodjango-production.up.railway.app/', 'localhost', 'http://127.0.0.1']
 
 
 # Application definition
